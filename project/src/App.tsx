@@ -151,7 +151,7 @@ function App() {
           <div className="mb-4 p-4 bg-red-900/50 rounded-lg flex items-center gap-3">
             <WifiOff className="w-5 h-5 text-red-400" />
             <p className="text-red-200">
-              Unable to connect to the backend server. Please ensure it's running at http://127.0.0.1:5000
+              Unable to connect to the backend server. Please ensure it's running at  
             </p>
           </div>
         )}
@@ -161,7 +161,7 @@ function App() {
             <Brain className="w-8 h-8 text-blue-400" />
             <div>
               <h1 className="text-2xl font-bold">Emotional AI Assistant</h1>
-              <p className="text-sm text-gray-400">Current State: {getEmotionalStateDescription(emotionalState)}</p>
+               
             </div>
           </div>
           <button
@@ -258,7 +258,7 @@ function App() {
                   <p className="text-sm">{message.text}</p>
                   {message.emotionalState && (
                     <div className="mt-2 text-xs text-gray-400">
-                      Emotional State: {getEmotionalStateDescription(message.emotionalState)}
+                
                     </div>
                   )}
                 </div>
