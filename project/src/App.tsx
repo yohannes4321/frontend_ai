@@ -117,7 +117,8 @@ function App() {
         },
         body: JSON.stringify({
           message: inputMessage,
-          parameters: parameters
+          parameters: parameters,
+          session_id: localStorage.getItem("session_id") || "user_123",
         }),
       });
       if (!response.ok) {
